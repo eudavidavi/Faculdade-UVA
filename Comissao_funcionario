@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std
+
+int main()
+{
+int matricula, tempodecasa
+char nome [99]
+float valor_mes_1, valor_mes_2, valor_mes_3
+
+cout << "Digite a Matrícula do vendedor:";
+cin >> matricula;
+
+cout << "Digite o Nome do vendedor:";
+cin >> nome;
+
+cout << "Digite o valor de vendas do mês 1:";
+cin >> valor_mes_1;
+
+cout << "Digite o valor de vendas do mês 2:";
+cin >> valor_mes_2;
+
+cout << "Digite o valor de vendas do mês 3:";
+cin >> valor_mes_3;
+
+cout << "Matrícula:" << matricula << endl;
+cout << "Nome:" << nome << endl;
+cout << "Tempo de casa:" << tempodecasa << endl;
+cout << "Valor do mês 1:" << valor_mes_1 << endl;
+cout << "Valor do mês 2:" << valor_mes_2 << endl;
+cout << "Valor do mês 3:" << valor_mes_3 << endl;
+
+if (tempodecasa >= 10) {
+	float valor_comissao_mes_1 = valor_mes_1 * 0.1;
+	cout << "Valor da comissão no mês 1:" << valor_comissao_mes_1 << endl;
+	
+	float valor_comissao_mes_2 = valor_mes_2 * 0.12;
+	cout << "Valor da comissão no mês 2:" << valor_comissao_mes_2 << endl;
+	
+	float valor_comissao_mes_3 = valor_mes_3 * 0.15;
+	cout << "Valor da comissão no mês 3:" << valor_comissao_mes_3 << endl;	
+	
+	float total_comissao = valor_comissao_mes_1 + valor_comissao_mes_2 + valor_comissao_mes_3;
+	cout << "Total da comissão:" << total_comissao;
+}
+
+else {
+	float valor_comissao_mes_1 = valor_mes_1 * 0.1;
+	cout << "Valor da comissão no mês 1:" << valor_comissao_mes_1 << endl;
+	
+	float valor_comissao_mes_2 = valor_mes_2 * 0.1;
+	cout << "Valor da comissão no mês 1:" << valor_comissao_mes_1 << endl;
+	
+	float valor_comissao_mes_3 = valor_mes_3 * 0.1;
+	cout << "Valor da comissão no mês 3:" << valor_comissao_mes_3 << endl;
+	
+	float total_comissao = valor_comissao_mes_1 + valor_comissao_mes_2 + valor_comissao_mes_3;
+	cout << "Total da comissão:" << total_comissao;
+}
+
+return 0;
+}	
